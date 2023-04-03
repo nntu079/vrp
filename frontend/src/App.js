@@ -1,6 +1,7 @@
 import logo from "./logo.svg";
 import "./App.css";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { fetchData } from "./utils";
 
 import {
   AddProduct,
@@ -10,6 +11,16 @@ import {
 } from "./components";
 
 function App() {
+  useEffect(() => {
+    async function getData() {
+      const { data } = await fetchData.get("/get-locations");
+
+      console.log({data})
+    }
+
+    getData()
+  });
+
   return (
     <div>
       <div className="flex_box_menu">
