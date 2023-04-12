@@ -58,8 +58,6 @@ export default function LocationInfo({ currentLocation }) {
       >
         <Select
           showSearch
-
-          placeholder="Chọn loại hàng"
           optionFilterProp="children"
           options={[
             {
