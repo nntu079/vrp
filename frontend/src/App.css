@@ -29,18 +29,18 @@
   background-color: rgb(22, 250, 22)
 }
 
-.classNull{
+.classNull {
   background-color: rgb(175, 180, 173)
 }
 
-.classCurrent{
- border-top: solid rgb(222, 238, 130) 1px;
- border-bottom: solid rgb(222, 238, 130) 1px;
- border-left: solid rgb(222, 238, 130) 4px;
- border-right: solid rgb(222, 238, 130) 4px;
+.classCurrent {
+  border-top: solid rgb(222, 238, 130) 1px;
+  border-bottom: solid rgb(222, 238, 130) 1px;
+  border-left: solid rgb(222, 238, 130) 4px;
+  border-right: solid rgb(222, 238, 130) 4px;
 }
 
-.classFull{
+.classFull {
   outline: 5px solid red;
 }
 
@@ -56,7 +56,7 @@
 
 .main_door1 {
   margin-top: 30px;
-  
+
   display: flex;
   align-items: center;
   justify-content: center;
@@ -69,4 +69,15 @@
   justify-content: center;
   border-left: solid violet 10px;
   border-right: solid violet 10px;
+}
+
+
+.box {
+  position: relative;
+}
+
+.bet_time {
+  position: absolute;
+  right:0;
+  bottom: 0;
 }

@@ -99,12 +99,12 @@ export default function LocationInfo({ currentLocation }) {
         <Input />
       </Form.Item>
 
-      <Form.Item
+      {/*<Form.Item
         label="Hết hạn"
         name="expire"
       >
         <DatePicker  />
-      </Form.Item>
+        </Form.Item> */}
     </Form>
   );
 }

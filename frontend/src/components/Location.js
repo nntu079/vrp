@@ -1,14 +1,13 @@
 import { classNames } from "../utils";
 
 export default function Location({ location,currentLocation, setCurrentLocation }) {
-  console.log({ location })
 
   const classes = {
     'location': true,
     'classA': location?.type == 'A',
     'classB': location?.type == 'B',
     'classC': location?.type == 'C',
-    'classCurrent':location?.id ==currentLocation?.id,
+    'classCurrent':location?.id_location ==currentLocation?.id_location,
     'classFull':location?.quantity>=50,
     'classNull':location?.quantity==0
   };
@@ -19,5 +18,5 @@ export default function Location({ location,currentLocation, setCurrentLocation 
     setCurrentLocation(location)
   }
 
-  return <button className={myClassNames} onClick={onClickLocation}>{location?.id}</button>;
+  return <button className={myClassNames} onClick={onClickLocation}>{location?.id_location}</button>;
 }
