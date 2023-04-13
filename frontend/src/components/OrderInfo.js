@@ -23,7 +23,7 @@ export default function OrderInfo() {
             form.setFields([
                 {
                     name: "id_order", // required
-                    errors: ["Không tìm thấy sản phẩm"],
+                    errors: ["Không tìm thấy đơn hàng"],
                 },
             ])
         } else {
@@ -44,7 +44,7 @@ export default function OrderInfo() {
             title: 'Tên sản phẩm',
             dataIndex: 'name',
         },
-        
+
         {
             title: 'Số lượng cần',
             dataIndex: 'quantity_order',
@@ -66,10 +66,10 @@ export default function OrderInfo() {
             dataIndex: 'quantity',
         },
     ];
-   
+
 
     return (
-        <div className="flex_box_menu"  style={{minHeight:310}}>
+        <div className="flex_box_menu" style={{ minHeight: 310 }}>
             <Form
                 form={form}
 
@@ -128,7 +128,7 @@ export default function OrderInfo() {
                     dataSource={order}
                     pagination={false}
 
-                 
+
                     scroll={{
                         y: 200,
                     }}
@@ -145,7 +145,7 @@ export default function OrderInfo() {
                     dataSource={locations}
                     pagination={false}
 
-                
+
                     scroll={{
                         y: 200,
                     }}
