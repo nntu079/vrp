@@ -15,19 +15,14 @@ app.use(express.static(__dirname + "/build")); //build reactjs
 
 app.get('/api/get-locations', async function (req, res) {
 
-  /*
   let kq = await conn.query(`
     select *
     from locations as l, products as p, products_locations as pd
     where pd.id_location = l.id_location and pd.id_product = p.id_product
     order by l.id_location
   `, []);
-  */
 
   //1 7 10 12
-  kq = {
-    rows: []
-  }
 
   const finalResult = []
   for (let index = 0; index < 200; index++) {

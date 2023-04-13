@@ -4,10 +4,7 @@ const connectionString = "postgres://nntu079@ep-twilight-violet-887854.ap-southe
 
 let conn;
 if (!conn) {
-  conn = new Pool({
-    connectionString: connectionString,
-    ssl: { rejectUnauthorized: false }
-  });
+  conn = new Pool(connectionString);
 }
 
 module.exports = conn;
