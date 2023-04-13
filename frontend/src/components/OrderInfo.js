@@ -114,7 +114,7 @@ export default function OrderInfo() {
                     }}
                 >
                     <Button type="primary" htmlType="submit">
-                        Tra sản phẩm
+                        Tra đơn hàng
                     </Button>
                 </Form.Item>
 
