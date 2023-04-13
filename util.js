@@ -1,15 +1,12 @@
 const { Pool } = require('pg')
 
+const connectionString = "postgres://nntu079@ep-twilight-violet-887854.ap-southeast-1.aws.neon.tech/neondb"
 
 let conn;
 if (!conn) {
   conn = new Pool({
-    user: process.env.PGSQL_USER,
-    password: process.env.PGSQL_PASSWORD,
-    host: process.env.PGSQL_HOST,
-    port: process.env.PGSQL_PORT,
-    database: process.env.PGSQL_DATABASE,
-    ssl: true,
+    connectionString: connectionString,
+    ssl: { rejectUnauthorized: false }
   });
 }
 
