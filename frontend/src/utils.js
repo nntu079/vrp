@@ -2,7 +2,7 @@ import axios from "axios";
 
 
 export const fetchData = axios.create({
-  baseURL: process.env.BASE_URL + "/api",
+  baseURL: "https://vrp3.herokuapp.com" + "/api",
   timeout: 10000,
 });
 
