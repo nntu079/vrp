@@ -91,14 +91,14 @@ app.post('/api/get-order', async function (req, res) {
   let kq1 = await conn.query(`
   SELECT DISTINCT  p.name, quantity_order
   FROM orders as o, products as p, products_locations as pl
-  where o.id_order = $1 and o.id_product = p.id_product and pl.id_product = p.id_product
+  where o.id_order = $1 and o.id_product = p.id_product
   order by p.name
 `, [id_order]);
 
   let kq2 = await conn.query(`
   SELECT *
   FROM orders as o, products as p, products_locations as pl
-  where o.id_order = $1 and o.id_product = p.id_product and pl.id_product = p.id_product
+  where o.id_order = $1 and o.id_product = p.id_product
   order by p.name
   `, [id_order]);
 
